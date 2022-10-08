@@ -1,22 +1,23 @@
 public abstract class Transport {
-    private String brand;
-    private  String model;
-    private double engineVolume;
+    private final String brand;
+    private final String model;
+    private final double engineVolume;
 
 
     public Transport(String brand, String model, double engineVolume) {
         if (brand == null || brand.isBlank() || brand.isEmpty()) {
-            System.out.println("Некоректные данные");
+            this.brand = "Укажите бренд";
         } else {
             this.brand = brand;
         }
         if (model == null || model.isBlank() || model.isEmpty()) {
-            System.out.println("Некорректные данные");
+            this.model = "Укажите модель";
         } else {
             this.model = model;
         }
         if (engineVolume <= 0) {
-            System.out.println("Некорректные данные");
+            this.engineVolume = 0;
+            System.out.println("Укажите объеи двигателя");
         } else {
             this.engineVolume = engineVolume;
         }
