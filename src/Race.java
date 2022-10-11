@@ -11,10 +11,10 @@ public class Race {
         Truck kamaz = new Truck("Kamaz", "5490", 9.8);
         Truck isuzu = new Truck("Isuzu", "Forward", 7.8);
 
-        Bus scania = new Bus("Scania", "HigerA80", 11.5);
-        Bus daewoo = new Bus("daewoo", "BC212MA", 12.2);
-        Bus paz = new Bus("ПАЗ", "Вектор", 4.4);
-        Bus solaris = new Bus("Solaris", "Urbino 10", 6.0);
+        Bus scania = new Bus("Scania", "HigerA80", 11.5,"100-233");
+        Bus daewoo = new Bus("daewoo", "BC212MA", 12.2," ");
+        Bus paz = new Bus("ПАЗ", "Вектор", 4.4, "90-120");
+        Bus solaris = new Bus("Solaris", "Urbino 10", 6.0,"Capa");
 
         DriverB driverB = new DriverB("Николо Макиавелли", 37);
         driverB.start(bmw);
